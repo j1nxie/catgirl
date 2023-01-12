@@ -7,19 +7,23 @@ a simple Jekyll theme, made for my personal usage.
 
 add this line to your Jekyll site's `Gemfile`:
 
-```ruby gem "catgirl" ```
+```ruby
+gem "catgirl"
+```
 
 and add this line to your Jekyll site's `_config.yml`:
 
-```yaml theme: catgirl ```
+```yaml
+theme: catgirl
+```
 
 and then execute:
 
-$ bundle
+	$ bundle
 
-Or install it yourself as:
+or install it yourself as:
 
-$ gem install catgirl
+	$ gem install catgirl
 
 ## usage
 
@@ -50,7 +54,7 @@ conduct.
 
 to set up your environment to develop this theme, run `bundle install`.
 
-your theme is setup just like a normal Jekyll site! To test your theme, run
+your theme is setup just like a normal Jekyll site! to test your theme, run
 `bundle exec jekyll serve` and open your browser at `http://localhost:4000`.
 this starts a Jekyll server using your theme. add pages, documents, data, etc.
 like normal to test your theme's contents. as you make modifications to your
