@@ -1,50 +1,67 @@
 # catgirl
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+a simple Jekyll theme, made for my personal usage.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
 
-TODO: Delete this and the text above, and describe your gem
+## installation
 
-## Installation
+add this line to your Jekyll site's `Gemfile`:
 
-Add this line to your Jekyll site's `Gemfile`:
+```ruby gem "catgirl" ```
 
-```ruby
-gem "catgirl"
-```
+and add this line to your Jekyll site's `_config.yml`:
 
-And add this line to your Jekyll site's `_config.yml`:
+```yaml theme: catgirl ```
 
-```yaml
-theme: catgirl
-```
+and then execute:
 
-And then execute:
-
-    $ bundle
+$ bundle
 
 Or install it yourself as:
 
-    $ gem install catgirl
+$ gem install catgirl
 
-## Usage
+## usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+- Sass files:
+	- `catgirl.scss`: contains the main css code
+	- `colors.scss`: contains color definitions
+	- `fonts.scss`: contains font stack definitions
+	
+- subpages:
+	- `archives`: chronological list of all posts
+	- `categories`: all categories available
+	- `projects`: a subpage for showcasing projects
+	- `socials`: a subpage for linking to other social media
+	- `tags`: all tags available
 
-## Contributing
+- posts go into `_posts` and they will be automatically published to
+`/posts/<title>`.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/catgirl. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
+## contributing
 
-## Development
+bug reports and pull requests are welcome on GitHub at
+https://github.com/j1nxie/catgirl. this project is intended to be a safe,
+welcoming space for collaboration, and contributors are expected to adhere to
+the [Contributor Covenant](https://www.contributor-covenant.org/) code of
+conduct.
 
-To set up your environment to develop this theme, run `bundle install`.
+## development
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+to set up your environment to develop this theme, run `bundle install`.
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `catgirl.gemspec` accordingly.
+your theme is setup just like a normal Jekyll site! To test your theme, run
+`bundle exec jekyll serve` and open your browser at `http://localhost:4000`.
+this starts a Jekyll server using your theme. add pages, documents, data, etc.
+like normal to test your theme's contents. as you make modifications to your
+theme and to your content, your site will regenerate and you should see the
+changes in the browser after a refresh, just like normal.
 
-## License
+when your theme is released, only the files in `_layouts`, `_includes`, `_sass`
+and `assets` tracked with Git will be bundled. to add a custom directory to
+your theme-gem, please edit the regexp in `catgirl.gemspec` accordingly.
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+## license
+
+the theme is available as open source under the terms of the [MIT
+License](https://opensource.org/licenses/MIT).

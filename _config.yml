@@ -1,0 +1,53 @@
+title: catgirl owo
+description: a weeb theme for your jekyll site OwO
+
+# build settings
+
+theme: catgirl
+
+plugins:
+  - jekyll-feed
+
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  subpages:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /posts/:title
+  - scope:
+      path: ""
+      type: subpages
+    values:
+      layout: page
+      permalink: /:title
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profiles: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - README.md
+  - LICENSE.txt

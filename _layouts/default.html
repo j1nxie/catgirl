@@ -1,1 +1,54 @@
-{{ content }}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/assets/css/styles.css">
+		<title>
+			{%- unless page.layout == "home" -%}
+				{{ page.title | append: " | " }}
+			{%- endunless -%}
+				{{ site.title }}
+		</title>
+		{% include favicons.html %}
+	</head>
+
+	<body>
+		<div id="main-wrapper">
+			<div id="wrapper">
+				<div id="sidebar">
+					<header>
+						<p>
+							<a href="/">home</a> |
+							<a href="/archives">archives</a> |
+							<a href="/categories">categories</a> |
+							<a href="/tags">tags</a>
+							</br>
+							<a href="/projects">projects</a> |
+							<a href="/socials">socials</a>
+						</p>
+
+						<p>
+							<big>lumi's trashcan</big>
+						</p>
+					</header>
+
+					<footer>
+						<p>
+							art by <a href="https://twitter.com/felutiahime/">@felutiahime</a>
+							</br>
+							© 2022-2023 j1nxie
+						</p>
+					</footer>
+				</div>
+
+				<section id="main">
+					<div class="content">
+						{{ content }}
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
