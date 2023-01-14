@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/assets/css/styles.css">
-		<title>
-			{%- unless page.layout == "home" -%}
-				{{ page.title | append: " | " }}
-			{%- endunless -%}
-				{{ site.title }}
-		</title>
-		{% include favicons.html %}
-	</head>
-
+	{% include head.html %}
 	<body>
 		<div id="main-wrapper">
 			<div id="wrapper">
