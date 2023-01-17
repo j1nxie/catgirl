@@ -1,3 +1,4 @@
 ---
+title: socials
 layout: socials
 ---

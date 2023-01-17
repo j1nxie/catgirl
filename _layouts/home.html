@@ -1,19 +1,31 @@
----
-layout: default
-# home page layout
----
+{% include head.html %}
 
-<div id="home-wrapper">
-	<h1 class="home-text">j1nxie | Rylie | Lumine</h1>
-	<hr style="width: 80%">
-	<p class="home-text">
-		random developer on the internet | hoshiyomi | i like anime girls
+<body>
+	<main>
+	<h1>j1nxie | Rylie | Lumine</h1>
+	<p id="bio">
+		catgirl developer on the Internet • hoshiyomi ☄ • i like anime,
+		programming and video games
 	</p>
-	<p class="home-text">
-		check out my projects <a href="/projects">here</a>!
-	</p>
+	<ul>
+		<li><a href="/socials">socials</a></li>
+		<li><a href="/archives">blog</a></li>
+		<li><a href="/projects">projects</a></li>
+	</ul>
+	<img src="/assets/img/suiseistupid.png">
+	</main>
+	<div id="space"></div>
 	<p id="quote-text">
 		"I want to do what I can for the people who need me. That way, I might
 		remain in the memories of that person, right?"
 	</p>
-</div>
+	<p id="quote-name">
+		- Chisato Nishikigi
+	</p>	
+
+	<script>
+		twemoji.parse(
+			document.body,
+			{ base: "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/" });
+	</script>
+</body>

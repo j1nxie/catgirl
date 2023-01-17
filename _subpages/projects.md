@@ -1,3 +1,4 @@
 ---
+title: projects
 layout: projects
 ---

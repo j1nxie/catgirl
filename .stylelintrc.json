@@ -15,7 +15,7 @@
 		"order/properties-alphabetical-order": true
 	},
 	"ignoreFiles": [
-		"assets/css/styles.scss",
+		"assets/css/*.scss",
 		"**/*.html"
 	]
 }

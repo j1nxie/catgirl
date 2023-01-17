@@ -1,13 +1,18 @@
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{%- if page.layout == "home" -%}
+		<link rel="stylesheet" href="/assets/css/home.css">
+		<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+	{%- else -%}
 		<link rel="stylesheet" href="/assets/css/styles.css">
-		<title>
-			{%- unless page.layout == "home" -%}
-				{{ page.title | append: " | " }}
-			{%- endunless -%}
-				{{ site.title }}
-		</title>
-		{% include favicons.html %}
-	</head>
+	{%- endif -%}
+	<title>
+		{%- unless page.layout == "home" -%}
+			{{ page.title | append: " | " }}
+		{%- endunless -%}
+			{{ site.title }}
+	</title>
+	{% include favicons.html %}
+</head>
