@@ -7,6 +7,7 @@ theme: catgirl
 
 plugins:
   - jekyll-feed
+  - jekyll-archives
 
 kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
@@ -45,6 +46,15 @@ compress_html:
   blanklines: false
   ignore:
     envs: [development]
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
 
 exclude:
   - "*.gem"
