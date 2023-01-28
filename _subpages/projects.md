@@ -1,4 +1,6 @@
 ---
 title: projects
-layout: projects
+layout: default
 ---
+
+[a](a)
