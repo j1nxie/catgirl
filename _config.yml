@@ -23,6 +23,8 @@ kramdown:
 collections:
   subpages:
     output: true
+  projects:
+    output: true
 
 defaults:
   - scope:
@@ -35,8 +37,14 @@ defaults:
       path: ""
       type: subpages
     values:
-      layout: page
+      layout: default
       permalink: /:title
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      permalink: /projects/:title
 
 compress_html:
   clippings: all
