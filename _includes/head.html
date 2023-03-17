@@ -4,10 +4,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	{%- if page.layout == "home" -%}
 		<link rel="stylesheet" href="/assets/css/home.css">
-		<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	{%- else -%}
 		<link rel="stylesheet" href="/assets/css/styles.css">
 	{%- endif -%}
+	<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	<title>
 		{%- unless page.layout == "home" -%}
 			{{ page.title | append: " | " }}
