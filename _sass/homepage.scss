@@ -50,8 +50,9 @@ a {
 	color: $dark-text;
 }
 
+a:link
 a:visited {
-	color: silver;
+	color: $dark-text;
 }
 
 ul {
