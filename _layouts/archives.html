@@ -4,6 +4,7 @@ layout: default
 
 <div id="archives">
 	<h1>archives</h1>
+	<hr>
 	{% for post in site.posts %}
 	{% capture curr_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 
@@ -11,13 +12,14 @@ layout: default
 	{% unless forloop.first %}</ul>{% endunless %}
 	<div class="year">{{ curr_year }}</div>
 	<ul>
-	{% assign last_year = curr_year %}
-	{% endif %}
+		{% assign last_year = curr_year %}
+		{% endif %}
 
-	{% assign ts = post.date | date: "%s" %}
-	<li>
-		<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-		<span class="date">({{ post.date | date: "%B %d" }})</span>
-	</li>
-	{% endfor %}
+		{% assign ts = post.date | date: "%s" %}
+		<li>
+			<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+			<span class="date">({{ post.date | date: "%B %d" }})</span>
+		</li>
+		{% endfor %}
+	</ul>
 </div>
