@@ -3,19 +3,20 @@ layout: default
 ---
 
 <div id="page-category">
-	<h1>
-		{{ page.title }}
-		• <span class="posts-count">
-			{% assign posts_count = page.posts | size %}
-			{{ posts_count }}
-			{% if posts_count > 1 %}
-				posts
-			{% else %}
-				post
-			{% endif %}
-		</span>
-	</h1>
-	<hr>
+	<div class="title">
+		<h1>
+			{{ page.title }}
+			• <span class="posts-count">
+				{% assign posts_count = page.posts | size %}
+				{{ posts_count }}
+				{% if posts_count > 1 %}
+					posts
+				{% else %}
+					post
+				{% endif %}
+			</span>
+		</h1>
+	</div>
 
 	<ul class="posts-list">
 		{% for post in page.posts %}

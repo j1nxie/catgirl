@@ -1,46 +1,48 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-	{% include head.html %}
-	<body>
-		<div id="main-wrapper">
-			<div id="wrapper">
-				<div id="sidebar">
-					<header>
-						<p>
-							<a href="/">home</a> |
-							<a href="/archives">archives</a> |
-							<a href="/categories">categories</a> |
-							<a href="/tags">tags</a>
-							</br>
-							<a href="/projects">projects</a> |
-							<a href="https://linktr.ee/ryliexd">socials</a>
-						</p>
+<html lang="{{ site.lang | default: " en-US" }}">
+{% include head.html %}
 
-						<p>
-							<big>lumi's trashcan</big>
-						</p>
-					</header>
+<body>
+	<div id="main-wrapper">
+		<div id="wrapper">
+			<div id="sidebar">
+				<header>
+					<p>
+						<a href="/">home</a> |
+						<a href="/about">about</a> |
+						<a href="/archives">archives</a>
+						<br>
+						<a href="/categories">categories</a> |
+						<a href="/tags">tags</a> |
+						<a href="/projects">projects</a>
+					</p>
 
-					<footer>
-						<p>
-							art by <a href="https://twitter.com/felutiahime/">@felutiahime</a>
-							</br>
-							© 2022-2023 j1nxie
-						</p>
-					</footer>
-				</div>
+					<p>
+						<big>lumi's trashcan</big>
+					</p>
+				</header>
 
-				<section id="main">
-					<div class="content">
-						{{ content }}
-					</div>
-				</section>
+				<footer>
+					<p>
+						art by <a href="https://twitter.com/felutiahime/">@felutiahime</a>
+						</br>
+						© 2022-2023 j1nxie
+					</p>
+				</footer>
 			</div>
+
+			<section id="main">
+				<div class="content">
+					{{ content }}
+				</div>
+			</section>
 		</div>
-		<script>
-			twemoji.parse(
-				document.body,
-				{ base: "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/" });
-		</script>
-	</body>
+	</div>
+	<script>
+		twemoji.parse(
+			document.body,
+			{ base: "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/" });
+	</script>
+</body>
+
 </html>

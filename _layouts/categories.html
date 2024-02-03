@@ -4,8 +4,9 @@ layout: default
 
 {% assign sort_categories = site.categories | sort %}
 
-<h1>categories</h1>
-<hr>
+<div class="title">
+	<h1>categories</h1>
+</div>
 
 {% for category in sort_categories %}
 	{% assign category_name = category | first %}
