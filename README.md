@@ -2,6 +2,9 @@
 
 a simple Jekyll theme, made for my personal usage.
 
+> [!NOTE]
+> i have stopped maintaining this theme under its own repository, and merged it with my [personal website's repository](https://github.com/j1nxie/j1nxie.github.io).
+
 
 ## installation
 
